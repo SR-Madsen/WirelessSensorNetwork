@@ -1,0 +1,104 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title "IoT Slave Board"
+Date "2020-11-01"
+Rev "1.0"
+Comp "University of Southern Denmark"
+Comment1 "SRM"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_02x07_Odd_Even J?
+U 1 1 5FA2048B
+P 5250 3250
+F 0 "J?" H 5300 3767 50  0000 C CNN
+F 1 "M50-3610742R" H 5300 3676 50  0000 C CNN
+F 2 "Personal_Misc:M50-3610742R" H 5250 3250 50  0001 C CNN
+F 3 "~" H 5250 3250 50  0001 C CNN
+	1    5250 3250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5550 2950
+NoConn ~ 5050 2950
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5FA210E1
+P 5000 3050
+F 0 "#PWR?" H 5000 2900 50  0001 C CNN
+F 1 "+1V8" V 5000 3200 50  0000 L CNN
+F 2 "" H 5000 3050 50  0001 C CNN
+F 3 "" H 5000 3050 50  0001 C CNN
+	1    5000 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5000 3050 5050 3050
+Wire Wire Line
+	5050 3150 5000 3150
+Wire Wire Line
+	5000 3150 5000 3200
+Wire Wire Line
+	5000 3250 5050 3250
+$Comp
+L power:GND #PWR?
+U 1 1 5FA218E5
+P 5000 3200
+F 0 "#PWR?" H 5000 2950 50  0001 C CNN
+F 1 "GND" V 5000 3050 50  0000 R CNN
+F 2 "" H 5000 3200 50  0001 C CNN
+F 3 "" H 5000 3200 50  0001 C CNN
+	1    5000 3200
+	0    1    1    0   
+$EndComp
+Connection ~ 5000 3200
+Wire Wire Line
+	5000 3200 5000 3250
+NoConn ~ 5050 3350
+$Comp
+L power:GND #PWR?
+U 1 1 5FA21FDC
+P 5000 3450
+F 0 "#PWR?" H 5000 3200 50  0001 C CNN
+F 1 "GND" V 5000 3300 50  0000 R CNN
+F 2 "" H 5000 3450 50  0001 C CNN
+F 3 "" H 5000 3450 50  0001 C CNN
+	1    5000 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 3450 5050 3450
+Text HLabel 5000 3550 0    50   Output ~ 0
+USART_RX
+Wire Wire Line
+	5000 3550 5050 3550
+Text HLabel 5600 3550 2    50   Input ~ 0
+USART_TX
+Wire Wire Line
+	5600 3550 5550 3550
+Wire Wire Line
+	5550 3450 5600 3450
+Wire Wire Line
+	5600 3350 5550 3350
+Wire Wire Line
+	5600 3250 5550 3250
+Wire Wire Line
+	5600 3150 5550 3150
+Wire Wire Line
+	5600 3050 5550 3050
+Text HLabel 5600 3450 2    50   Output ~ 0
+NRST
+Text HLabel 5600 3350 2    50   Input ~ 0
+JTDI
+Text HLabel 5600 3250 2    50   Output ~ 0
+JTDO
+Text HLabel 5600 3150 2    50   Output ~ 0
+JTCK
+Text HLabel 5600 3050 2    50   Output ~ 0
+JTMS
+$EndSCHEMATC

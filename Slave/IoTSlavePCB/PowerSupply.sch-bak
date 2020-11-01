@@ -1,0 +1,472 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title "IoT Slave Board"
+Date "2020-11-01"
+Rev "1.0"
+Comp "University of Southern Denmark"
+Comment1 "SRM"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5FA7DBB8
+P 4200 1800
+F 0 "BT?" H 4318 1896 50  0000 L CNN
+F 1 "LIR2450" H 4318 1805 50  0000 L CNN
+F 2 "" V 4200 1860 50  0001 C CNN
+F 3 "~" V 4200 1860 50  0001 C CNN
+	1    4200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5FA7EB03
+P 2050 1500
+F 0 "J?" H 1968 1175 50  0000 C CNN
+F 1 "Conn_01x02" H 1968 1266 50  0000 C CNN
+F 2 "" H 2050 1500 50  0001 C CNN
+F 3 "~" H 2050 1500 50  0001 C CNN
+	1    2050 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2250 1500 2350 1500
+Text Notes 1150 1550 0    50   ~ 0
+Solar panel input\nVoltage: 5-6 V\nCurrent: 10-100 mA
+$Comp
+L Battery_Management:MCP73831-2-OT U?
+U 1 1 5FA81AC4
+P 3250 1700
+F 0 "U?" H 3250 2181 50  0000 C CNN
+F 1 "MCP73831T-2ACI/OT" H 3250 2090 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3300 1450 50  0001 L CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 3100 1650 50  0001 C CNN
+	1    3250 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1400 2550 1400
+$Comp
+L power:GND #PWR?
+U 1 1 5FA84991
+P 3250 2150
+F 0 "#PWR?" H 3250 1900 50  0001 C CNN
+F 1 "GND" H 3255 1977 50  0000 C CNN
+F 2 "" H 3250 2150 50  0001 C CNN
+F 3 "" H 3250 2150 50  0001 C CNN
+	1    3250 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1600 3750 1600
+Wire Wire Line
+	3750 1600 3750 1400
+Wire Wire Line
+	3750 1400 3900 1400
+$Comp
+L Device:C C?
+U 1 1 5FA85813
+P 2550 1750
+F 0 "C?" H 2550 1950 50  0000 L CNN
+F 1 "10 µF" H 2550 1850 50  0000 L CNN
+F 2 "" H 2588 1600 50  0001 C CNN
+F 3 "~" H 2550 1750 50  0001 C CNN
+	1    2550 1750
+	1    0    0    -1  
+$EndComp
+Connection ~ 2550 1400
+Wire Wire Line
+	2550 1400 3250 1400
+$Comp
+L Device:R R?
+U 1 1 5FA87B52
+P 2750 1950
+F 0 "R?" H 2800 2000 50  0000 L CNN
+F 1 "25k" H 2800 1900 50  0000 L CNN
+F 2 "" V 2680 1950 50  0001 C CNN
+F 3 "~" H 2750 1950 50  0001 C CNN
+	1    2750 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1800 2750 1800
+Wire Wire Line
+	2350 1500 2350 2100
+Connection ~ 2750 2100
+Wire Wire Line
+	2750 2100 3250 2100
+Connection ~ 3250 2100
+Wire Wire Line
+	3250 2100 3900 2100
+Wire Wire Line
+	3250 2000 3250 2100
+Wire Wire Line
+	3250 2100 3250 2150
+Wire Wire Line
+	2350 2100 2550 2100
+Wire Wire Line
+	2550 1400 2550 1600
+Wire Wire Line
+	2550 1900 2550 2100
+Connection ~ 2550 2100
+Wire Wire Line
+	2550 2100 2750 2100
+NoConn ~ 3650 1800
+$Comp
+L Device:C C?
+U 1 1 5FA8A8BE
+P 3900 1750
+F 0 "C?" H 3900 1650 50  0000 L CNN
+F 1 "4.7 µF" H 3900 1550 50  0000 L CNN
+F 2 "" H 3938 1600 50  0001 C CNN
+F 3 "~" H 3900 1750 50  0001 C CNN
+	1    3900 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1600 3900 1400
+Connection ~ 3900 1400
+Wire Wire Line
+	3900 1900 3900 2100
+Connection ~ 3900 2100
+Wire Wire Line
+	3900 2100 4200 2100
+Text Notes 1050 2900 0    50   ~ 0
+Maximum current = 1000 / R = 40 mA\nCut-off current is fixed 7.5% of 40 mA = 3 mA\nPower dissipation is (6 V - 3 V) * 40 mA = 120 mW
+Wire Wire Line
+	3900 1400 4200 1400
+Wire Wire Line
+	4200 1600 4200 1400
+Connection ~ 4200 1400
+Wire Wire Line
+	4200 1400 4450 1400
+Wire Wire Line
+	4200 2100 4200 1900
+Wire Notes Line
+	1050 1050 4650 1050
+Wire Notes Line
+	4650 1050 4650 2450
+Wire Notes Line
+	4650 2450 1050 2450
+Wire Notes Line
+	1050 2450 1050 1050
+Text Notes 1050 2550 0    50   ~ 0
+Battery charging circuit
+$Comp
+L power:+BATT #PWR?
+U 1 1 5FA8E9B1
+P 4450 1400
+F 0 "#PWR?" H 4450 1250 50  0001 C CNN
+F 1 "+BATT" H 4450 1550 50  0000 C CNN
+F 2 "" H 4450 1400 50  0001 C CNN
+F 3 "" H 4450 1400 50  0001 C CNN
+	1    4450 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FA977FF
+P 2550 4200
+F 0 "#PWR?" H 2550 3950 50  0001 C CNN
+F 1 "GND" H 2550 4050 50  0000 C CNN
+F 2 "" H 2550 4200 50  0001 C CNN
+F 3 "" H 2550 4200 50  0001 C CNN
+	1    2550 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4150 2550 4200
+$Comp
+L power:GND #PWR?
+U 1 1 5FA98A7F
+P 1450 3550
+F 0 "#PWR?" H 1450 3300 50  0001 C CNN
+F 1 "GND" V 1455 3422 50  0000 R CNN
+F 2 "" H 1450 3550 50  0001 C CNN
+F 3 "" H 1450 3550 50  0001 C CNN
+	1    1450 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5FA99475
+P 1450 3850
+F 0 "#PWR?" H 1450 3700 50  0001 C CNN
+F 1 "+BATT" V 1450 4100 50  0000 C CNN
+F 2 "" H 1450 3850 50  0001 C CNN
+F 3 "" H 1450 3850 50  0001 C CNN
+	1    1450 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FA9AC93
+P 1550 3700
+F 0 "C?" H 1350 3750 50  0000 L CNN
+F 1 "4.7 µF" H 1200 3650 50  0000 L CNN
+F 2 "" H 1588 3550 50  0001 C CNN
+F 3 "~" H 1550 3700 50  0001 C CNN
+	1    1550 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 3550 1550 3550
+Wire Wire Line
+	1700 3550 1700 3700
+Wire Wire Line
+	1700 3700 1850 3700
+Wire Wire Line
+	1450 3850 1550 3850
+$Comp
+L power:GND #PWR?
+U 1 1 5FA9F0EA
+P 3450 3850
+F 0 "#PWR?" H 3450 3600 50  0001 C CNN
+F 1 "GND" V 3455 3722 50  0000 R CNN
+F 2 "" H 3450 3850 50  0001 C CNN
+F 3 "" H 3450 3850 50  0001 C CNN
+	1    3450 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FA9F0F6
+P 3300 3700
+F 0 "C?" H 3100 3650 50  0000 L CNN
+F 1 "10 µF" H 2950 3750 50  0000 L CNN
+F 2 "" H 3338 3550 50  0001 C CNN
+F 3 "~" H 3300 3700 50  0001 C CNN
+	1    3300 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3450 3850 3300 3850
+Wire Wire Line
+	3300 3850 3150 3850
+Wire Wire Line
+	3150 3850 3150 3700
+Connection ~ 3300 3850
+Wire Wire Line
+	3050 3550 3300 3550
+Connection ~ 3300 3550
+Wire Wire Line
+	3050 3700 3150 3700
+Wire Wire Line
+	2350 4150 2350 4450
+Wire Wire Line
+	2350 4450 3050 4450
+Wire Wire Line
+	3050 4450 3050 3850
+Wire Wire Line
+	2450 3200 2450 3150
+Wire Wire Line
+	2450 3150 3300 3150
+Wire Wire Line
+	3300 3150 3300 3550
+Wire Wire Line
+	1850 3550 1800 3550
+Wire Wire Line
+	1800 3550 1800 3850
+Connection ~ 1800 3850
+Wire Wire Line
+	1800 3850 1850 3850
+Connection ~ 1550 3550
+Connection ~ 1550 3850
+Wire Wire Line
+	1550 3550 1700 3550
+Wire Wire Line
+	1550 3850 1800 3850
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5FAA4C85
+P 3500 3550
+F 0 "#PWR?" H 3500 3400 50  0001 C CNN
+F 1 "+1V8" H 3500 3700 50  0000 C CNN
+F 2 "" H 3500 3550 50  0001 C CNN
+F 3 "" H 3500 3550 50  0001 C CNN
+	1    3500 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3550 3500 3550
+Wire Notes Line
+	1050 3050 3800 3050
+Wire Notes Line
+	3800 3050 3800 4550
+Wire Notes Line
+	3800 4550 1050 4550
+Wire Notes Line
+	1050 3050 1050 4550
+Text Notes 1050 4650 0    50   ~ 0
+1.8 V converter
+Text Notes 1050 4850 0    50   ~ 0
+~~90% efficiency above 10 mA.
+Text Notes 1100 5950 0    50   ~ 0
+1V / 1.05 V converter for VDD12 (increased efficiency in run mode):\n\nhttps://www.mouser.dk/Power/DC-DC-Converters/Non-Isolated-DC-DC-Converters/_/N-brvxx?P=1yx5k7vZ1z0z7ptZ1yxt79oZ1y7z66q&Rl=brvxxZgjdht1Z1y7m006Z1y7m0ajSGgjdht2Z1y7m01gZ1y7m04xSGT
+$Comp
+L Personal_ICs:MYRGP180100B21RA U?
+U 1 1 5FAC5135
+P 1850 3550
+F 0 "U?" H 2550 3850 50  0000 C CNN
+F 1 "MYRGP180100B21RA" H 2850 3750 50  0000 C CNN
+F 2 "Personal_ICs:MYRGP180100B21RA" H 2400 3350 50  0001 C CNN
+F 3 "https://www.mouser.dk/datasheet/2/281/MYRGP-b-w-1701814.pdf" H 3700 3450 50  0001 C CNN
+	1    1850 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FACDD05
+P 5600 4200
+F 0 "#PWR?" H 5600 3950 50  0001 C CNN
+F 1 "GND" H 5600 4050 50  0000 C CNN
+F 2 "" H 5600 4200 50  0001 C CNN
+F 3 "" H 5600 4200 50  0001 C CNN
+	1    5600 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 4150 5600 4200
+$Comp
+L power:GND #PWR?
+U 1 1 5FACDD0C
+P 4500 3550
+F 0 "#PWR?" H 4500 3300 50  0001 C CNN
+F 1 "GND" V 4505 3422 50  0000 R CNN
+F 2 "" H 4500 3550 50  0001 C CNN
+F 3 "" H 4500 3550 50  0001 C CNN
+	1    4500 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5FACDD12
+P 4500 3850
+F 0 "#PWR?" H 4500 3700 50  0001 C CNN
+F 1 "+BATT" V 4500 4100 50  0000 C CNN
+F 2 "" H 4500 3850 50  0001 C CNN
+F 3 "" H 4500 3850 50  0001 C CNN
+	1    4500 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FACDD18
+P 4600 3700
+F 0 "C?" H 4400 3750 50  0000 L CNN
+F 1 "4.7 µF" H 4250 3650 50  0000 L CNN
+F 2 "" H 4638 3550 50  0001 C CNN
+F 3 "~" H 4600 3700 50  0001 C CNN
+	1    4600 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3550 4600 3550
+Wire Wire Line
+	4750 3550 4750 3700
+Wire Wire Line
+	4750 3700 4900 3700
+Wire Wire Line
+	4500 3850 4600 3850
+$Comp
+L power:GND #PWR?
+U 1 1 5FACDD22
+P 6500 3850
+F 0 "#PWR?" H 6500 3600 50  0001 C CNN
+F 1 "GND" V 6505 3722 50  0000 R CNN
+F 2 "" H 6500 3850 50  0001 C CNN
+F 3 "" H 6500 3850 50  0001 C CNN
+	1    6500 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FACDD28
+P 6350 3700
+F 0 "C?" H 6150 3650 50  0000 L CNN
+F 1 "10 µF" H 6000 3750 50  0000 L CNN
+F 2 "" H 6388 3550 50  0001 C CNN
+F 3 "~" H 6350 3700 50  0001 C CNN
+	1    6350 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6500 3850 6350 3850
+Wire Wire Line
+	6350 3850 6200 3850
+Wire Wire Line
+	6200 3850 6200 3700
+Connection ~ 6350 3850
+Wire Wire Line
+	6100 3550 6350 3550
+Connection ~ 6350 3550
+Wire Wire Line
+	6100 3700 6200 3700
+Wire Wire Line
+	5400 4150 5400 4450
+Wire Wire Line
+	5400 4450 6100 4450
+Wire Wire Line
+	6100 4450 6100 3850
+Wire Wire Line
+	5500 3200 5500 3150
+Wire Wire Line
+	5500 3150 6350 3150
+Wire Wire Line
+	6350 3150 6350 3550
+Wire Wire Line
+	4900 3550 4850 3550
+Wire Wire Line
+	4850 3550 4850 3850
+Connection ~ 4850 3850
+Wire Wire Line
+	4850 3850 4900 3850
+Connection ~ 4600 3550
+Connection ~ 4600 3850
+Wire Wire Line
+	4600 3550 4750 3550
+Wire Wire Line
+	4600 3850 4850 3850
+Wire Wire Line
+	6350 3550 6550 3550
+Wire Notes Line
+	4100 3050 6850 3050
+Wire Notes Line
+	6850 3050 6850 4550
+Wire Notes Line
+	6850 4550 4100 4550
+Wire Notes Line
+	4100 3050 4100 4550
+Text Notes 4100 4650 0    50   ~ 0
+1 V converter
+Text Notes 4100 5000 0    50   ~ 0
+~~90% efficiency above 10 mA.\nLeave unconnected unless tests show that\nit can be effective to include.
+$Comp
+L Personal_ICs:MYRGP100100B21RA U?
+U 1 1 5FAD0D81
+P 4900 3550
+F 0 "U?" H 5600 3850 50  0000 C CNN
+F 1 "MYRGP100100B21RA" H 5900 3750 50  0000 C CNN
+F 2 "Personal_ICs:MYRGP180100B21RA" H 5450 3350 50  0001 C CNN
+F 3 "https://www.mouser.dk/datasheet/2/281/MYRGP-b-w-1701814.pdf" H 6750 3450 50  0001 C CNN
+	1    4900 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V0 #PWR?
+U 1 1 5FAD1B50
+P 6550 3550
+F 0 "#PWR?" H 6550 3400 50  0001 C CNN
+F 1 "+1V0" H 6565 3723 50  0000 C CNN
+F 2 "" H 6550 3550 50  0001 C CNN
+F 3 "" H 6550 3550 50  0001 C CNN
+	1    6550 3550
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

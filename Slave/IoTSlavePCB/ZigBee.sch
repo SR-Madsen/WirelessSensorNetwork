@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 5 5
 Title "IoT Slave Board"
 Date "2020-11-01"
 Rev "1.0"
@@ -13,4 +13,381 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L Personal_ICs:AT86RF232-ZX U?
+U 1 1 5FA7DB82
+P 2200 1450
+F 0 "U?" H 3100 1837 60  0000 C CNN
+F 1 "AT86RF232-ZX" H 3100 1731 60  0000 C CNN
+F 2 "Personal_ICs:AT86RF232-ZX" H 3100 1690 60  0001 C CNN
+F 3 "" H 2200 1450 60  0000 C CNN
+	1    2200 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1450 2200 1450
+$Comp
+L power:GND #PWR?
+U 1 1 5FA7F874
+P 2150 1550
+F 0 "#PWR?" H 2150 1300 50  0001 C CNN
+F 1 "GND" V 2155 1422 50  0000 R CNN
+F 2 "" H 2150 1550 50  0001 C CNN
+F 3 "" H 2150 1550 50  0001 C CNN
+	1    2150 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 1550 2200 1550
+Wire Wire Line
+	2150 1650 2200 1650
+$Comp
+L power:GND #PWR?
+U 1 1 5FA7FB1C
+P 2150 2000
+F 0 "#PWR?" H 2150 1750 50  0001 C CNN
+F 1 "GND" V 2155 1872 50  0000 R CNN
+F 2 "" H 2150 2000 50  0001 C CNN
+F 3 "" H 2150 2000 50  0001 C CNN
+	1    2150 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 1950 2200 1950
+Wire Wire Line
+	2150 2050 2200 2050
+Wire Wire Line
+	2150 1450 2150 1550
+Connection ~ 2150 1550
+Wire Wire Line
+	2150 1550 2150 1650
+Wire Wire Line
+	2150 1950 2150 2000
+Connection ~ 2150 2000
+Wire Wire Line
+	2150 2000 2150 2050
+$Comp
+L power:GND #PWR?
+U 1 1 5FA801C9
+P 2150 2550
+F 0 "#PWR?" H 2150 2300 50  0001 C CNN
+F 1 "GND" V 2155 2422 50  0000 R CNN
+F 2 "" H 2150 2550 50  0001 C CNN
+F 3 "" H 2150 2550 50  0001 C CNN
+	1    2150 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 2550 2200 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5FA80332
+P 2150 3100
+F 0 "#PWR?" H 2150 2850 50  0001 C CNN
+F 1 "GND" H 2155 2927 50  0000 C CNN
+F 2 "" H 2150 3100 50  0001 C CNN
+F 3 "" H 2150 3100 50  0001 C CNN
+	1    2150 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2950 2200 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5FA80DA4
+P 4050 2950
+F 0 "#PWR?" H 4050 2700 50  0001 C CNN
+F 1 "GND" V 4055 2822 50  0000 R CNN
+F 2 "" H 4050 2950 50  0001 C CNN
+F 3 "" H 4050 2950 50  0001 C CNN
+	1    4050 2950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4050 2950 4000 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5FA8110A
+P 4050 2650
+F 0 "#PWR?" H 4050 2400 50  0001 C CNN
+F 1 "GND" V 4055 2522 50  0000 R CNN
+F 2 "" H 4050 2650 50  0001 C CNN
+F 3 "" H 4050 2650 50  0001 C CNN
+	1    4050 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4050 2650 4000 2650
+$Comp
+L power:GND #PWR?
+U 1 1 5FA81201
+P 4050 2050
+F 0 "#PWR?" H 4050 1800 50  0001 C CNN
+F 1 "GND" V 4055 1922 50  0000 R CNN
+F 2 "" H 4050 2050 50  0001 C CNN
+F 3 "" H 4050 2050 50  0001 C CNN
+	1    4050 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4050 2050 4000 2050
+Wire Wire Line
+	4050 1750 4000 1750
+$Comp
+L power:GND #PWR?
+U 1 1 5FA8166E
+P 4050 1450
+F 0 "#PWR?" H 4050 1200 50  0001 C CNN
+F 1 "GND" H 4055 1277 50  0000 C CNN
+F 2 "" H 4050 1450 50  0001 C CNN
+F 3 "" H 4050 1450 50  0001 C CNN
+	1    4050 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 1650 4000 1650
+Wire Wire Line
+	4000 1550 4050 1550
+Connection ~ 4050 1650
+Wire Wire Line
+	4000 1450 4050 1450
+Wire Wire Line
+	4050 1450 4050 1550
+Connection ~ 4050 1550
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5FA83B8F
+P 4600 1950
+F 0 "#PWR?" H 4600 1800 50  0001 C CNN
+F 1 "+1V8" V 4600 2050 50  0000 L CNN
+F 2 "" H 4600 1950 50  0001 C CNN
+F 3 "" H 4600 1950 50  0001 C CNN
+	1    4600 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5FA845C2
+P 1500 2750
+F 0 "#PWR?" H 1500 2600 50  0001 C CNN
+F 1 "+1V8" V 1500 2850 50  0000 L CNN
+F 2 "" H 1500 2750 50  0001 C CNN
+F 3 "" H 1500 2750 50  0001 C CNN
+	1    1500 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4050 1550 4050 1650
+$Comp
+L Device:C C?
+U 1 1 5FA87196
+P 1550 2900
+F 0 "C?" H 1300 2950 50  0000 L CNN
+F 1 "100 nF" H 1150 2850 50  0000 L CNN
+F 2 "" H 1588 2750 50  0001 C CNN
+F 3 "~" H 1550 2900 50  0001 C CNN
+	1    1550 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 2750 1550 2750
+$Comp
+L Device:C C?
+U 1 1 5FA88E14
+P 4500 1800
+F 0 "C?" H 4300 1850 50  0000 L CNN
+F 1 "100 nF" H 4100 1750 50  0000 L CNN
+F 2 "" H 4538 1650 50  0001 C CNN
+F 3 "~" H 4500 1800 50  0001 C CNN
+	1    4500 1800
+	1    0    0    -1  
+$EndComp
+Connection ~ 4050 1450
+Wire Wire Line
+	4050 1650 4500 1650
+Wire Wire Line
+	4500 1950 4600 1950
+Wire Wire Line
+	4050 1750 4050 1650
+Wire Wire Line
+	1550 2750 1750 2750
+Connection ~ 1550 2750
+Wire Wire Line
+	2200 2650 2150 2650
+Wire Wire Line
+	2150 2650 2150 2750
+Wire Wire Line
+	2150 2750 2200 2750
+$Comp
+L Device:C C?
+U 1 1 5FA8CE25
+P 1750 2900
+F 0 "C?" H 1865 2946 50  0000 L CNN
+F 1 "100 nF" H 1865 2855 50  0000 L CNN
+F 2 "" H 1788 2750 50  0001 C CNN
+F 3 "~" H 1750 2900 50  0001 C CNN
+	1    1750 2900
+	1    0    0    -1  
+$EndComp
+Connection ~ 1750 2750
+Connection ~ 1750 3050
+Wire Wire Line
+	1750 3050 1550 3050
+Wire Wire Line
+	2150 2950 2150 3050
+Wire Wire Line
+	1750 2750 2150 2750
+Connection ~ 2150 2750
+Wire Wire Line
+	1750 3050 2150 3050
+Connection ~ 2150 3050
+Wire Wire Line
+	2150 3050 2150 3100
+NoConn ~ 2200 2850
+NoConn ~ 4000 1950
+Connection ~ 4500 1950
+Wire Wire Line
+	4000 1850 4050 1850
+Wire Wire Line
+	4050 1850 4050 1950
+Wire Wire Line
+	4050 1950 4500 1950
+$Comp
+L Device:Crystal_GND24 X?
+U 1 1 5FA92A9C
+P 5600 1600
+F 0 "X?" H 5450 1300 50  0000 R CNN
+F 1 "16 MHz" H 5450 1400 50  0000 R CNN
+F 2 "Personal_Actives:ECS1601633BCKMTR" H 5600 1600 50  0001 C CNN
+F 3 "~" H 5600 1600 50  0001 C CNN
+	1    5600 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FA9483B
+P 5150 1250
+F 0 "#PWR?" H 5150 1000 50  0001 C CNN
+F 1 "GND" H 5155 1077 50  0000 C CNN
+F 2 "" H 5150 1250 50  0001 C CNN
+F 3 "" H 5150 1250 50  0001 C CNN
+	1    5150 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FA955B6
+P 6000 1950
+F 0 "#PWR?" H 6000 1700 50  0001 C CNN
+F 1 "GND" H 6005 1777 50  0000 C CNN
+F 2 "" H 6000 1950 50  0001 C CNN
+F 3 "" H 6000 1950 50  0001 C CNN
+	1    6000 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FAA69DE
+P 6000 1750
+F 0 "C?" H 6100 1800 50  0000 L CNN
+F 1 "22 pF" H 6100 1700 50  0000 L CNN
+F 2 "" H 6038 1600 50  0001 C CNN
+F 3 "~" H 6000 1750 50  0001 C CNN
+	1    6000 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1900 6000 1950
+Wire Wire Line
+	6000 1950 5600 1950
+Wire Wire Line
+	5600 1800 5600 1950
+Connection ~ 6000 1950
+$Comp
+L Device:C C?
+U 1 1 5FAA848F
+P 5150 1450
+F 0 "C?" H 5250 1500 50  0000 L CNN
+F 1 "22 pF" H 5250 1400 50  0000 L CNN
+F 2 "" H 5188 1300 50  0001 C CNN
+F 3 "~" H 5150 1450 50  0001 C CNN
+	1    5150 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 1300 5150 1250
+Wire Wire Line
+	5600 1250 5600 1400
+Connection ~ 5150 1250
+Wire Wire Line
+	5750 1600 6000 1600
+Text Label 5850 1600 0    50   ~ 0
+XI
+Text Label 5250 1600 0    50   ~ 0
+XO
+Text Label 4050 2150 0    50   ~ 0
+XO
+Wire Wire Line
+	4000 2150 4050 2150
+Text Label 4050 2250 0    50   ~ 0
+XI
+Wire Wire Line
+	4050 2250 4000 2250
+Text Notes 5050 2500 0    50   ~ 0
+16 pF load capacitance.\nParasitic pin capacitance is 3 pF.\nStray board capacitance is 2 pF.
+Wire Notes Line
+	5050 1000 6350 1000
+Wire Notes Line
+	6350 1000 6350 2200
+Wire Notes Line
+	6350 2200 5050 2200
+Wire Notes Line
+	5050 2200 5050 1000
+Text Notes 5050 1000 0    50   ~ 0
+16 MHz Crystal
+Text Notes 1100 3600 0    50   ~ 0
+Digital and analog ground must be separated (A/D VSS).\nAntenna impedance is 50 Ohm.
+Wire Wire Line
+	5150 1600 5450 1600
+Wire Wire Line
+	5150 1250 5600 1250
+Wire Wire Line
+	4000 2350 4050 2350
+Wire Wire Line
+	4000 2450 4050 2450
+Wire Wire Line
+	4000 2550 4050 2550
+Wire Wire Line
+	4000 2750 4050 2750
+Wire Wire Line
+	4000 2850 4050 2850
+Text HLabel 4050 2350 2    50   Output ~ 0
+IRQ
+Text HLabel 4050 2450 2    50   Input ~ 0
+~SPI_SS
+Text HLabel 4050 2550 2    50   Input ~ 0
+SPI_MOSI
+Text HLabel 4050 2750 2    50   Output ~ 0
+SPI_MISO
+Text HLabel 4050 2850 2    50   Input ~ 0
+SPI_CLK
+Wire Wire Line
+	2200 2150 2150 2150
+Text HLabel 2150 2150 0    50   Input ~ 0
+~RST
+Wire Wire Line
+	2200 2450 2150 2450
+NoConn ~ 4000 3050
+Text HLabel 2150 2450 0    50   Input ~ 0
+SLP_TR
+Wire Notes Line
+	1100 1000 4950 1000
+Wire Notes Line
+	4950 1000 4950 3400
+Wire Notes Line
+	4950 3400 1100 3400
+Wire Notes Line
+	1100 1000 1100 3400
+Text Notes 1100 1000 0    50   ~ 0
+ZigBee Transceiver
 $EndSCHEMATC

@@ -89,7 +89,7 @@ U 1 1 5FA87B52
 P 2750 1950
 F 0 "R?" H 2800 2000 50  0000 L CNN
 F 1 "25k" H 2800 1900 50  0000 L CNN
-F 2 "" V 2680 1950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2680 1950 50  0001 C CNN
 F 3 "~" H 2750 1950 50  0001 C CNN
 	1    2750 1950
 	1    0    0    -1  
@@ -307,8 +307,6 @@ Text Notes 1050 4650 0    50   ~ 0
 1.8 V converter
 Text Notes 1050 4850 0    50   ~ 0
 ~~90% efficiency above 10 mA.
-Text Notes 1100 5950 0    50   ~ 0
-1V / 1.05 V converter for VDD12 (increased efficiency in run mode):\n\nhttps://www.mouser.dk/Power/DC-DC-Converters/Non-Isolated-DC-DC-Converters/_/N-brvxx?P=1yx5k7vZ1z0z7ptZ1yxt79oZ1y7z66q&Rl=brvxxZgjdht1Z1y7m006Z1y7m0ajSGgjdht2Z1y7m01gZ1y7m04xSGT
 $Comp
 L Personal_ICs:MYRGP180100B21RA U?
 U 1 1 5FAC5135
@@ -445,8 +443,6 @@ Wire Notes Line
 	4100 3050 4100 4550
 Text Notes 4100 4650 0    50   ~ 0
 1 V converter
-Text Notes 4100 5000 0    50   ~ 0
-~~90% efficiency above 10 mA.\nLeave unconnected unless tests show that\nit can be effective to include.
 $Comp
 L Personal_ICs:MYRGP100100B21RA U?
 U 1 1 5FAD0D81
@@ -469,4 +465,6 @@ F 3 "" H 6550 3550 50  0001 C CNN
 	1    6550 3550
 	1    0    0    -1  
 $EndComp
+Text Notes 4100 5000 0    50   ~ 0
+For increased MCU efficiency in run mode. Connect to VDD12.\n~~90% efficiency above 10 mA.\nLeave unconnected unless tests show that\nit can be effective to include.
 $EndSCHEMATC

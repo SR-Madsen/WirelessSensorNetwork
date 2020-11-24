@@ -656,7 +656,7 @@ Wire Wire Line
 Text HLabel 4800 2950 2    50   BiDi ~ 0
 USB_DP
 Text HLabel 4800 3050 2    50   BiDi ~ 0
-USB_DM
+USB_DN
 Text HLabel 2600 4150 0    50   Output ~ 0
 QSPI_NCS
 Wire Wire Line

@@ -179,17 +179,6 @@ $EndComp
 Wire Wire Line
 	4700 1550 4700 1650
 $Comp
-L Device:C C23
-U 1 1 5FA87196
-P 2200 2900
-F 0 "C23" H 2150 2800 50  0000 L CNN
-F 1 "100 nF" H 2050 2700 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2238 2750 50  0001 C CNN
-F 3 "~" H 2200 2900 50  0001 C CNN
-	1    2200 2900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C18
 U 1 1 5FA88E14
 P 5150 1800
@@ -203,9 +192,6 @@ $EndComp
 Connection ~ 4700 1450
 Wire Wire Line
 	4700 1750 4700 1650
-Wire Wire Line
-	2200 2750 2400 2750
-Connection ~ 2200 2750
 Wire Wire Line
 	2850 2650 2800 2650
 Wire Wire Line
@@ -225,8 +211,6 @@ F 3 "~" H 2400 2900 50  0001 C CNN
 $EndComp
 Connection ~ 2400 2750
 Connection ~ 2400 3050
-Wire Wire Line
-	2400 3050 2200 3050
 Wire Wire Line
 	2800 2950 2800 3050
 Wire Wire Line
@@ -502,26 +486,25 @@ Connection ~ 5150 1650
 $Comp
 L Device:C C22
 U 1 1 5FB79D41
-P 2000 2900
-F 0 "C22" H 1800 2950 50  0000 L CNN
-F 1 "10 µF" H 1650 2850 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2038 2750 50  0001 C CNN
-F 3 "~" H 2000 2900 50  0001 C CNN
-	1    2000 2900
+P 2200 2900
+F 0 "C22" H 1950 2950 50  0000 L CNN
+F 1 "10 µF" H 1850 2850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2238 2750 50  0001 C CNN
+F 3 "~" H 2200 2900 50  0001 C CNN
+	1    2200 2900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2000 2750 2200 2750
-Wire Wire Line
-	2000 3050 2200 3050
-Connection ~ 2200 3050
-Wire Wire Line
-	1850 2750 2000 2750
-Connection ~ 2000 2750
 Wire Notes Line
 	5700 3400 5700 1000
 Wire Notes Line
 	1100 3400 5700 3400
 Wire Notes Line
 	1100 1000 5700 1000
+Connection ~ 2200 2750
+Wire Wire Line
+	2200 2750 2400 2750
+Wire Wire Line
+	2200 3050 2400 3050
+Wire Wire Line
+	1850 2750 2200 2750
 $EndSCHEMATC

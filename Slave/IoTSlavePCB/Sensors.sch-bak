@@ -137,4 +137,111 @@ Wire Notes Line
 	6400 4300 4500 4300
 Text Notes 4500 3100 0    50   ~ 0
 Temperature and humidity sensor
+$Comp
+L power:+BATT #PWR063
+U 1 1 5FC228FA
+P 4900 5200
+F 0 "#PWR063" H 4900 5050 50  0001 C CNN
+F 1 "+BATT" H 4900 5350 50  0000 C CNN
+F 2 "" H 4900 5200 50  0001 C CNN
+F 3 "" H 4900 5200 50  0001 C CNN
+	1    4900 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5FC2324E
+P 5150 5200
+F 0 "R6" V 5250 5200 50  0000 C CNN
+F 1 "10M" V 5350 5200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5080 5200 50  0001 C CNN
+F 3 "~" H 5150 5200 50  0001 C CNN
+	1    5150 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5FC23C04
+P 5750 5200
+F 0 "R7" V 5850 5200 50  0000 C CNN
+F 1 "4.99M" V 5950 5200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5680 5200 50  0001 C CNN
+F 3 "~" H 5750 5200 50  0001 C CNN
+	1    5750 5200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 5200 5000 5200
+Wire Wire Line
+	5900 5200 6000 5200
+$Comp
+L power:GND #PWR064
+U 1 1 5FC257F4
+P 6000 5200
+F 0 "#PWR064" H 6000 4950 50  0001 C CNN
+F 1 "GND" H 6000 5050 50  0000 C CNN
+F 2 "" H 6000 5200 50  0001 C CNN
+F 3 "" H 6000 5200 50  0001 C CNN
+	1    6000 5200
+	1    0    0    -1  
+$EndComp
+Text HLabel 5300 4600 0    50   Output ~ 0
+Batt_Meas
+Wire Notes Line
+	4500 4450 6400 4450
+Text Notes 4500 4450 0    50   ~ 0
+Battery voltage divider
+Text Notes 4500 5800 0    50   ~ 0
+Maximum battery voltage: 4.2 V\nMaximum ADC voltage: 1.8 V\nFor safety, battery voltage is divided by three.\nLow current consumption requires resistors in size MOhm.
+Text Notes 4500 6200 0    50   ~ 0
+Actual max output:\n4.2 V * 4.99M / (4.99M + 10M) = 1.4 V\nCurrent consumption:\n4.2 V / (10M + 4.99M) = 280 nA
+$Comp
+L Device:C C23
+U 1 1 5FC33A49
+P 5750 4750
+F 0 "C23" V 5500 4750 50  0000 C CNN
+F 1 "100 nF" V 5600 4750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5788 4600 50  0001 C CNN
+F 3 "~" H 5750 4750 50  0001 C CNN
+	1    5750 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5450 4600 5450 4750
+Wire Wire Line
+	5450 4750 5600 4750
+Wire Wire Line
+	5900 4750 6000 4750
+Connection ~ 6000 5200
+Wire Wire Line
+	5300 4600 5450 4600
+$Comp
+L Device:R R?
+U 1 1 5FC3819F
+P 5450 4950
+F 0 "R?" H 5550 4900 50  0000 C CNN
+F 1 "10k" H 5600 5000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5380 4950 50  0001 C CNN
+F 3 "~" H 5450 4950 50  0001 C CNN
+	1    5450 4950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5300 5200 5450 5200
+Wire Wire Line
+	5450 5100 5450 5200
+Connection ~ 5450 5200
+Wire Wire Line
+	5450 5200 5600 5200
+Connection ~ 5450 4750
+Wire Wire Line
+	5450 4750 5450 4800
+Wire Wire Line
+	6000 4750 6000 5200
+Wire Notes Line
+	6400 5450 4500 5450
+Wire Notes Line
+	6400 4450 6400 5450
+Wire Notes Line
+	4500 4450 4500 5450
 $EndSCHEMATC

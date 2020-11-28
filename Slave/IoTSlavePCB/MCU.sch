@@ -624,7 +624,6 @@ NoConn ~ 2650 2950
 NoConn ~ 2650 3050
 NoConn ~ 2650 3150
 NoConn ~ 2650 3250
-NoConn ~ 2650 3350
 NoConn ~ 2650 3450
 NoConn ~ 2650 3950
 NoConn ~ 4750 4050
@@ -708,4 +707,8 @@ F 3 "https://www.mouser.dk/ProductDetail/Murata-Electronics/BLM18KG102SZ1D?qs=sG
 $EndComp
 Text Notes 1450 3550 0    50   ~ 0
 1 A
+Text HLabel 2600 3350 0    50   Input ~ 0
+ADC_Battery
+Wire Wire Line
+	2650 3350 2600 3350
 $EndSCHEMATC

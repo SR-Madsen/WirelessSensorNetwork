@@ -1,8 +1,8 @@
 (export (version D)
   (design
     (source /home/sebastian/Desktop/Git/IoTProject/Slave/IoTSlavePCB/IoTSlavePCB.sch)
-    (date "Tue 24 Nov 2020 12:47:44 PM CET")
-    (tool "Eeschema 5.1.8-db9833491~87~ubuntu20.04.1")
+    (date "Fri 27 Nov 2020 02:26:18 PM CET")
+    (tool "Eeschema 5.1.8-db9833491~88~ubuntu20.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title "IoT Slave Board")
@@ -253,7 +253,7 @@
       (tstamp 5FB40500))
     (comp (ref BT1)
       (value LIR2450)
-      (footprint Personal_Misc:SMTU2430-LF)
+      (footprint Personal_Misc:SMTU2450-LF)
       (datasheet ~)
       (libsource (lib Device) (part Battery_Cell) (description "Single-cell battery"))
       (sheetpath (names /PowerSupply/) (tstamps /5F9F06B0/))

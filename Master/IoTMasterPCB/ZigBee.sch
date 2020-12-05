@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 5 6
 Title "IoT Master Board"
 Date "2020-11-28"
 Rev "1.0"
@@ -13,4 +13,15 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L Personal_ICs:AT86RF232-ZX U?
+U 1 1 5FCB565A
+P 4650 2800
+F 0 "U?" H 5550 3187 60  0000 C CNN
+F 1 "AT86RF232-ZX" H 5550 3081 60  0000 C CNN
+F 2 "Personal_ICs:AT86RF232-ZX" H 5550 3040 60  0001 C CNN
+F 3 "" H 4650 2800 60  0000 C CNN
+	1    4650 2800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

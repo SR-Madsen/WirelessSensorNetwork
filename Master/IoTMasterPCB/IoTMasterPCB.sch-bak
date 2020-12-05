@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 4550 2200 1950 2950
+S 4600 2200 1950 2950
 U 5F9E799A
 F0 "MCU" 50
 F1 "MCU.sch" 50

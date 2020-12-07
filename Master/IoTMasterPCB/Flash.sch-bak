@@ -1,0 +1,118 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Memory_Flash:W25Q32JVSS U?
+U 1 1 5FCEBC9A
+P 6150 3650
+F 0 "U?" H 6400 3250 50  0000 C CNN
+F 1 "W25Q32JVSS" H 6600 3150 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 6150 3650 50  0001 C CNN
+F 3 "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf" H 6150 3650 50  0001 C CNN
+	1    6150 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FCEC418
+P 6150 2950
+F 0 "#PWR?" H 6150 2800 50  0001 C CNN
+F 1 "+3V3" H 6165 3123 50  0000 C CNN
+F 2 "" H 6150 2950 50  0001 C CNN
+F 3 "" H 6150 2950 50  0001 C CNN
+	1    6150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FCECA90
+P 6400 3100
+F 0 "C?" V 6200 3200 50  0000 C CNN
+F 1 "100 nF" V 6300 3300 50  0000 C CNN
+F 2 "" H 6438 2950 50  0001 C CNN
+F 3 "~" H 6400 3100 50  0001 C CNN
+	1    6400 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6250 3100 6150 3100
+Wire Wire Line
+	6150 3100 6150 3250
+Wire Wire Line
+	6150 3100 6150 2950
+Connection ~ 6150 3100
+$Comp
+L power:GND #PWR?
+U 1 1 5FCED53D
+P 6600 3150
+F 0 "#PWR?" H 6600 2900 50  0001 C CNN
+F 1 "GND" H 6600 3000 50  0000 C CNN
+F 2 "" H 6600 3150 50  0001 C CNN
+F 3 "" H 6600 3150 50  0001 C CNN
+	1    6600 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3100 6600 3100
+Wire Wire Line
+	6600 3100 6600 3150
+$Comp
+L power:GND #PWR?
+U 1 1 5FCEDBA2
+P 6150 4100
+F 0 "#PWR?" H 6150 3850 50  0001 C CNN
+F 1 "GND" H 6150 3950 50  0000 C CNN
+F 2 "" H 6150 4100 50  0001 C CNN
+F 3 "" H 6150 4100 50  0001 C CNN
+	1    6150 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4100 6150 4050
+Wire Wire Line
+	5600 3550 5650 3550
+Wire Wire Line
+	5600 3750 5650 3750
+Wire Wire Line
+	6700 3450 6650 3450
+Wire Wire Line
+	6700 3550 6650 3550
+Wire Wire Line
+	6700 3750 6650 3750
+Wire Wire Line
+	6700 3850 6650 3850
+Text HLabel 5600 3550 0    50   Input ~ 0
+~QSPI_CS
+Text HLabel 5600 3750 0    50   Input ~ 0
+QSPI_CLK
+Text HLabel 6700 3450 2    50   BiDi ~ 0
+QSPI_IO0
+Text HLabel 6700 3550 2    50   BiDi ~ 0
+QSPI_IO1
+Text HLabel 6700 3750 2    50   BiDi ~ 0
+QSPI_IO2
+Text HLabel 6700 3850 2    50   BiDi ~ 0
+QSPI_IO3
+Wire Notes Line
+	5100 4300 5100 2700
+Wire Notes Line
+	5100 2700 7150 2700
+Wire Notes Line
+	7150 2700 7150 4300
+Wire Notes Line
+	7150 4300 5100 4300
+Text Notes 5100 4400 0    50   ~ 0
+32 Mbit NOR Flash
+$EndSCHEMATC

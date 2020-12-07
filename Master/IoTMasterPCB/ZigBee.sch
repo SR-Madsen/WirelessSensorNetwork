@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 5 7
 Title "IoT Master Board"
 Date "2020-11-28"
 Rev "1.0"
@@ -213,7 +213,7 @@ P 6350 1650
 F 0 "X?" H 6200 1350 50  0000 R CNN
 F 1 "16 MHz" H 6200 1450 50  0000 R CNN
 F 2 "Personal_Actives:ECS1601633BCKMTR" H 6350 1650 50  0001 C CNN
-F 3 "~" H 6350 1650 50  0001 C CNN
+F 3 "https://www.mouser.dk/ProductDetail/ECS/ECS-160-16-33B-CKM-TR?qs=%2Fha2pyFaduj8FvJ4IdJToWlBUNuT2RGoHlBXvalPO%2F5bHJOcdq1E7XB2wqUXb9nt" H 6350 1650 50  0001 C CNN
 	1    6350 1650
 	-1   0    0    1   
 $EndComp

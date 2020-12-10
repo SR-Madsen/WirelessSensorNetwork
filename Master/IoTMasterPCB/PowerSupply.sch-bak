@@ -182,7 +182,7 @@ Wire Notes Line
 	3850 950  3850 2350
 Wire Notes Line
 	3850 2350 1050 2350
-Text Notes 1050 2450 0    50   ~ 0
+Text Notes 1050 950  0    50   ~ 0
 USB circuit
 $Comp
 L Personal_ICs:MYRGP330100B21RA U?
@@ -297,9 +297,9 @@ Wire Notes Line
 	3850 2600 3850 4100
 Wire Notes Line
 	1050 2600 1050 4100
-Text Notes 1050 4200 0    50   ~ 0
+Text Notes 1050 2600 0    50   ~ 0
 3.3 V converter
-Text Notes 1050 4400 0    50   ~ 0
+Text Notes 1050 4200 0    50   ~ 0
 ~~90% efficiency above 10 mA.
 Wire Notes Line
 	1050 2600 3850 2600

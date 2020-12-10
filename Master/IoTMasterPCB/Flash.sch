@@ -113,6 +113,6 @@ Wire Notes Line
 	7150 2700 7150 4300
 Wire Notes Line
 	7150 4300 5100 4300
-Text Notes 5100 4400 0    50   ~ 0
+Text Notes 5100 2700 0    50   ~ 0
 32 Mbit NOR Flash
 $EndSCHEMATC

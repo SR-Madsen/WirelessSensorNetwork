@@ -1,4 +1,4 @@
-19094484653368588
+19099307689282326
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -71869,12 +71869,26 @@ Connector
 14
 14
 Personal_Misc
+NXP_NFC_13.56MHz
+Antenna designed with NXP NFC Antenna Design Tool for 13.56 MHz communication
+
+0
+10
+2
+Personal_Misc
 QSH-030-01-F-D-A
 60 pin, 2 row, 0.5mm pitch, high-speed SMD receptacle
 Connector
 0
 64
 64
+Personal_Misc
+RJMG1BD3B8K1ANR
+RJ45 10/100 Ethernet connector with integrated magnetics, LEDs, and termination
+Connector
+0
+14
+14
 Personal_Misc
 SMTU2450-LF
 Coin cell 2450 battery holder, SMD
@@ -71917,6 +71931,13 @@ Filter
 0
 12
 8
+Personal_Passives
+SRN2512R47M
+Inductor, 470 nH, 5.5 A max current, 20% tolerance, 32 mOhm DC, SMD
+Inductor
+0
+2
+2
 Personal_Passives
 SRN6045TA-101M
 Inductor, 100 µH, 1.33 A saturation, 0.456 Ohm DC, SMD

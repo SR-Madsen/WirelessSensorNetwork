@@ -1,4 +1,4 @@
-update=14-12-2020 11:12:38
+update=21-01-2021 10:47:24
 version=1
 last_client=kicad
 [general]
@@ -237,7 +237,7 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.2
+Clearance=0.155
 TrackWidth=0.25
 ViaDiameter=0.8
 ViaDrill=0.4
@@ -245,4 +245,26 @@ uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/1]
+Name=Ethernet
+Clearance=0.155
+TrackWidth=0.36
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.3
+dPairGap=0.155
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
+Name=USB
+Clearance=0.15
+TrackWidth=0.25
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.35
+dPairGap=0.15
 dPairViaGap=0.25

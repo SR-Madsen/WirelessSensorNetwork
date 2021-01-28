@@ -502,8 +502,8 @@ U 1 1 5FE33B68
 P 6950 1000
 AR Path="/5FE33B68" Ref="Y?"  Part="1" 
 AR Path="/5F5FC96C/5FE33B68" Ref="Y?"  Part="1" 
-AR Path="/5F9EEF53/5FE33B68" Ref="Y1"  Part="1" 
-F 0 "Y1" H 6950 1300 50  0000 C CNN
+AR Path="/5F9EEF53/5FE33B68" Ref="X1"  Part="1" 
+F 0 "X1" H 6950 1300 50  0000 C CNN
 F 1 "ECS-250-18-33B-CKY-TR" H 6950 1250 50  0000 C CNN
 F 2 "Vikings_devices:ECS-250-18-33B-CKY" H 7400 1150 50  0001 L CNN
 F 3 "https://www.ecsxtal.com/store/pdf/ecx-32.pdf" H 7400 1050 50  0001 L CNN

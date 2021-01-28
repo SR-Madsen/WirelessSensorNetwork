@@ -502,8 +502,8 @@ U 1 1 5FE33B68
 P 6950 1000
 AR Path="/5FE33B68" Ref="Y?"  Part="1" 
 AR Path="/5F5FC96C/5FE33B68" Ref="Y?"  Part="1" 
-AR Path="/5F9EEF53/5FE33B68" Ref="Y1"  Part="1" 
-F 0 "Y1" H 6950 1300 50  0000 C CNN
+AR Path="/5F9EEF53/5FE33B68" Ref="X1"  Part="1" 
+F 0 "X1" H 6950 1300 50  0000 C CNN
 F 1 "ECS-250-18-33B-CKY-TR" H 6950 1250 50  0000 C CNN
 F 2 "Vikings_devices:ECS-250-18-33B-CKY" H 7400 1150 50  0001 L CNN
 F 3 "https://www.ecsxtal.com/store/pdf/ecx-32.pdf" H 7400 1050 50  0001 L CNN
@@ -925,17 +925,6 @@ Wire Wire Line
 Text Notes 700  6500 0    79   ~ 0
 All high-speed routes must be same length on PCB.\nDifferential Impedance matching: 100 Ω\nDo not put ground the magnetics IC. Put shield ground under RJ45.
 $Comp
-L Connector:RJ45_Amphenol_RJMG1BD3B8K1ANR J3
-U 1 1 5FD36EA5
-P 8000 3650
-F 0 "J3" H 8000 4375 50  0000 C CNN
-F 1 "RJMG1BD3B8K1ANR" H 8000 4284 50  0000 C CNN
-F 2 "Connector_RJ:RJ45_Amphenol_RJMG1BD3B8K1ANR" H 8000 4350 50  0001 C CNN
-F 3 "https://www.amphenolcanada.com/ProductSearch/Drawings/AC/RJMG1BD3B8K1ANR.PDF" H 8000 4450 50  0001 C CNN
-	1    8000 3650
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0170
 U 1 1 5FD3FA0F
 P 8000 4400
@@ -1079,4 +1068,15 @@ Wire Notes Line
 	5700 6100 5700 650 
 Wire Notes Line
 	5700 650  700  650 
+$Comp
+L Personal_Misc:RJMG1BD3B8K1ANR J3
+U 1 1 60131064
+P 8000 3650
+F 0 "J3" H 8000 4375 50  0000 C CNN
+F 1 "RJMG1BD3B8K1ANR" H 8000 4284 50  0000 C CNN
+F 2 "Personal_Misc:RJMG1BD3B8K1ANR" H 8000 4350 50  0001 C CNN
+F 3 "https://www.amphenolcanada.com/ProductSearch/Drawings/AC/RJMG1BD3B8K1ANR.PDF" H 8000 4450 50  0001 C CNN
+	1    8000 3650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

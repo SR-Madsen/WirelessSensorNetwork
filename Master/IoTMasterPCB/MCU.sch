@@ -790,8 +790,6 @@ NoConn ~ 3700 2050
 NoConn ~ 3800 2050
 NoConn ~ 4000 2050
 NoConn ~ 4100 2050
-NoConn ~ 4400 2050
-NoConn ~ 4500 2050
 NoConn ~ 4900 2050
 NoConn ~ 5000 2050
 NoConn ~ 5100 2050
@@ -918,7 +916,6 @@ NoConn ~ 8500 2050
 NoConn ~ 8400 2050
 NoConn ~ 8300 2050
 NoConn ~ 8200 2050
-NoConn ~ 4300 2050
 NoConn ~ 4200 2050
 NoConn ~ 3900 2050
 NoConn ~ 3500 2050
@@ -1264,4 +1261,96 @@ Text HLabel 4700 1850 1    50   Input ~ 0
 ETH_INT
 Text HLabel 4600 1850 1    50   Output ~ 0
 ~ETH_RESET
+$Comp
+L Personal_Passives:150060SS55040 D2
+U 1 1 602A364D
+P 4000 900
+F 0 "D2" V 4250 700 50  0000 L CNN
+F 1 "150060SS55040" V 4345 1130 50  0001 L CNN
+F 2 "Personal_Passives:150060VS55040" H 4500 1050 50  0001 L BNN
+F 3 "" H 4500 950 50  0001 L BNN
+F 4 "2.4 V Red LED 1608 (0603)  SMD, Wurth Elektronik WL-SMCD 150060SS55040" H 4500 850 50  0001 L BNN "Description"
+F 5 "710-150060SS55040" H 4500 650 50  0001 L BNN "Mouser Part Number"
+F 6 "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/150060SS55040?qs=8Aam6%252B7C6HG0AGgMR5PhFg%3D%3D" H 4500 550 50  0001 L BNN "Mouser Price/Stock"
+F 7 "Wurth Elektronik" H 4500 450 50  0001 L BNN "Manufacturer_Name"
+F 8 "150060SS55040" H 4500 350 50  0001 L BNN "Manufacturer_Part_Number"
+	1    4000 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L Personal_Passives:150060VS55040 D3
+U 1 1 602AA6D1
+P 4350 900
+F 0 "D3" V 4600 1150 50  0000 L CNN
+F 1 "150060VS55040" V 4695 1130 50  0001 L CNN
+F 2 "Personal_Passives:150060VS55040" H 4850 1050 50  0001 L BNN
+F 3 "https://katalog.we-online.com/led/datasheet/150060VS55040.pdf" H 4850 950 50  0001 L BNN
+F 4 "LED, 150060VS55040, Wurth Elektronik WL-SMCD 573 (Typ.) nm 0603 Diffused SMD package" H 4850 850 50  0001 L BNN "Description"
+F 5 "0.5" H 4850 750 50  0001 L BNN "Height"
+F 6 "710-150060VS55040" H 4850 650 50  0001 L BNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/150060VS55040?qs=8Aam6%252B7C6HEumg%252B0cJZzvA%3D%3D" H 4850 550 50  0001 L BNN "Mouser Price/Stock"
+F 8 "Wurth Elektronik" H 4850 450 50  0001 L BNN "Manufacturer_Name"
+F 9 "150060VS55040" H 4850 350 50  0001 L BNN "Manufacturer_Part_Number"
+	1    4350 900 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 2050 4400 1900
+Wire Wire Line
+	4400 1900 4350 1900
+Wire Wire Line
+	4000 1950 4300 1950
+Wire Wire Line
+	4300 1950 4300 2050
+NoConn ~ 4500 2050
+$Comp
+L Device:R R51
+U 1 1 602CD8C4
+P 4350 1700
+F 0 "R51" H 4420 1746 50  0000 L CNN
+F 1 "150" H 4420 1655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4280 1700 50  0001 C CNN
+F 3 "~" H 4350 1700 50  0001 C CNN
+	1    4350 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R50
+U 1 1 602CDD0B
+P 4000 1700
+F 0 "R50" H 4070 1746 50  0000 L CNN
+F 1 "150" H 4070 1655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3930 1700 50  0001 C CNN
+F 3 "~" H 4000 1700 50  0001 C CNN
+	1    4000 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 1950 4000 1850
+Wire Wire Line
+	4350 1900 4350 1850
+$Comp
+L power:GND #PWR01
+U 1 1 603052E3
+P 3800 850
+F 0 "#PWR01" H 3800 600 50  0001 C CNN
+F 1 "GND" V 3805 722 50  0000 R CNN
+F 2 "" H 3800 850 50  0001 C CNN
+F 3 "" H 3800 850 50  0001 C CNN
+	1    3800 850 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 850  4000 850 
+Wire Wire Line
+	4350 850  4350 900 
+Wire Wire Line
+	4000 900  4000 850 
+Connection ~ 4000 850 
+Wire Wire Line
+	4000 850  4350 850 
+Wire Wire Line
+	4350 1550 4350 1500
+Wire Wire Line
+	4000 1550 4000 1500
 $EndSCHEMATC

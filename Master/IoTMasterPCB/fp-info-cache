@@ -1,71 +1,64 @@
-16056210344986
-Personal_Misc
-10118194-0001LF
-Amphenol SMD micro-USB type B connector
+14450208661777
+Personal_Passives
+2450FB15L0001E
+2.45 GHz Balun with integrated filter
 
 0
-11
 6
-Personal_Misc
-64600001003
-Fuse holder for 5x20mm glass fuse
-Connector
+6
+Personal_Passives
+150060SS55040
+Red LED
+LED
 0
 2
 2
-Personal_Misc
-61202021621
-20 pin, 2 row, 2.54mm pitch, through-hole header
-Connector
+Personal_Passives
+150060VS55040
+Green LED
+LED
 0
-20
-20
-Personal_Misc
-EFD_20_10_7
-Coil former, 8 pins, 20x10x7mm
-Undefined or Miscellaneous
+2
+2
+Personal_Passives
+BK1608HS601-T
+Ferrite bead, 600 Ohm @ 100 MHz, 350 mA, 0.45 mOhm DC, SMD 0603
+Ferrite Bead
 0
+2
+2
+Personal_Passives
+ECMF024CMX8
+Micro QFN-8L
+Filter
+0
+12
 8
-8
-Personal_Misc
-M50-3600542R
-10 pin, 2 row, 1.27mm pitch, SMD header
-Connector
-0
-10
-10
-Personal_Misc
-M50-3610742R
-14 pin, 2 row, 1.27mm pitch, SMD header
-Connector
-0
-14
-14
-Personal_Misc
-NXP_NFC_13.56MHz
-Antenna designed with NXP NFC Antenna Design Tool for 13.56 MHz communication
-
-0
-10
-2
-Personal_Misc
-QSH-030-01-F-D-A
-60 pin, 2 row, 0.5mm pitch, high-speed SMD receptacle
-Connector
-0
-64
-64
-Personal_Misc
-RJMG1BD3B8K1ANR
-1 Port RJ45 Magjack Connector Through Hole 10/100 Base-T, AutoMDIX, https://www.amphenolcanada.com/ProductSearch/Drawings/AC/RJMG1BD3B8K1ANR.PDF
-RJ45 Magjack
-0
-14
-13
-Personal_Misc
-SMTU2450-LF
-Coin cell 2450 battery holder, SMD
-Undefined or Miscellaneous
+Personal_Passives
+SRN2512R47M
+Inductor, 470 nH, 5.5 A max current, 20% tolerance, 32 mOhm DC, SMD
+Inductor
 0
 2
 2
+Personal_Passives
+SRN6045TA-101M
+Inductor, 100 µH, 1.33 A saturation, 0.456 Ohm DC, SMD
+Inductor
+0
+2
+2
+Personal_Passives
+SRR1208-821KL
+Inductor, 820 µH, 0.77 A saturation, 1.15 Ohm DC, SMD
+Inductor
+0
+2
+2
+Personal_Passives
+YBS2207G_RAG
+Full-wave bridge rectifier, 1000 V, 2.2 A, 1 Vf, SMD
+Inductor
+0
+4
+4

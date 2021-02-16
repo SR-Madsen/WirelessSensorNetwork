@@ -1,4 +1,4 @@
-# IoTProject
+# Wireless Sensor Network
 STM32-based project for testing Internet of Things, Ethernet, RFID, and similar technologies.
 
 ## Repository Structure
